@@ -1,0 +1,413 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// äÿçëåÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Draw.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Draw.ico"
+IDR_DRAWTYPE            ICON    DISCARDABLE     "res\\DrawDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "∆ƒ¿œ(&F)"
+    BEGIN
+        MENUITEM "ªı ∆ƒ¿œ(&N)\tCtrl+N",         ID_FILE_NEW
+        MENUITEM "ø≠±‚(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "¿˙¿Â(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "¥Ÿ∏• ¿Ã∏ß¿∏∑Œ ¿˙¿Â(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "¿Œº‚(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "¿Œº‚∏È πÃ∏Æ ∫∏±‚(&V)",        ID_FILE_PRINT_PREVIEW
+        MENUITEM "«¡∏∞≈Õ º≥¡§(&R)...",          ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "√÷±Ÿ ∆ƒ¿œ",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "¡æ∑·(&X)",                    ID_APP_EXIT
+    END
+    POPUP "∫∏±‚(&V)"
+    BEGIN
+        MENUITEM "µµ±∏∏¿Ω¡Ÿ(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "ªÛ≈¬«•Ω√¡Ÿ(&S)",              ID_VIEW_STATUS_BAR
+    END
+    POPUP "±◊∏Æ±‚(&D)"
+    BEGIN
+        MENUITEM "¿⁄¿Ø ∞Óº± ±◊∏Æ±‚(&F)",        ID_FREEDRAW
+        MENUITEM "º± ±◊∏Æ±‚(&L)",               ID_LINE
+        MENUITEM "ªÁ∞¢«¸ ±◊∏Æ±‚(&R)",           ID_RECTANGLE
+        MENUITEM "≈∏ø¯ ±◊∏Æ±‚(&E)",             ID_ELLIPSE
+        MENUITEM SEPARATOR
+        MENUITEM "¡ˆøÏ±‚(&E)",                  IDC_ERASER
+        MENUITEM SEPARATOR
+        POPUP "ªˆ.∆0Æ("
+        BEGIN
+            MENUITEM "PenColor T)...",                  ID_PENCOLOR
+            MENUITEM "BrushColor &O)...",            ID_BRUSHCOLOR
+        END
+    END
+    POPUP "µµøÚ∏ª(&H)"
+    BEGIN
+        MENUITEM "Draw ¡§∫∏(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Draw ¡§∫∏"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Draw πˆ¿¸ 1.0",IDC_STATIC,40,10,119,8
+    LTEXT           "¿˙¿€±« ",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "»Æ¿Œ",IDOK,178,7,32,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DRAW MFC ¿¿øÎ«¡∑Œ±◊∑•\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DRAW\0"
+            VALUE "LegalCopyright", "¿˙¿€±« \0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DRAW.EXE\0"
+            VALUE "ProductName", "DRAW ¿¿øÎ«¡∑Œ±◊∑•\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Draw\n\nDraw\nDraw Files (*.drw)\n.drw\nDraw.Document\nDraw Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Draw"
+    AFX_IDS_IDLEMESSAGE     "¡ÿ∫Òøœ∑·"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "∞„ƒß"
+    ID_INDICATOR_REC        "±‚∑œ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "ªı πÆº≠ ¿€º∫\nªı πÆº≠"
+    ID_FILE_OPEN            "±‚¡∏ πÆº≠ ø≠±‚\nø≠±‚"
+    ID_FILE_CLOSE           "Ω««‡¡ﬂ¿Œ πÆº≠ ¥›±‚\n¥›±‚"
+    ID_FILE_SAVE            "Ω««‡¡ﬂ¿Œ πÆº≠ ¿˙¿Â\n¿˙¿Â"
+    ID_FILE_SAVE_AS         "Ω««‡¡ﬂ¿Œ πÆº≠∏¶ ¥Ÿ∏• ¿Ã∏ß¿∏∑Œ ¿˙¿Â\n¥Ÿ∏• ¿Ã∏ß¿∏∑Œ ¿˙¿Â"
+    ID_FILE_PAGE_SETUP      "¿Œº‚ ø…º« ∫Ø∞Ê\n∆‰¿Ã¡ˆ º≥¡§"
+    ID_FILE_PRINT_SETUP     "«¡∏∞≈Õ π◊ ¿Œº‚ ø…º« ∫Ø∞Ê\n¿Œº‚ º≥¡§"
+    ID_FILE_PRINT           "Ω««‡¡ﬂ¿Œ πÆº≠ ¿Œº‚\n¿Œº‚"
+    ID_FILE_PRINT_PREVIEW   "¿¸√º ∆‰¿Ã¡ˆ ≥™≈∏≥ª±‚\n¿Œº‚ πÃ∏Æ∫∏±‚"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "«¡∑Œ±◊∑• ¡§∫∏, πˆ¿¸ π¯»£ π◊ ¿˙¿€±« ≥™≈∏≥ª±‚\n¡§∫∏"
+    ID_APP_EXIT             "¿¿øÎ«¡∑Œ±◊∑• ¡æ∑·; πÆº≠ ¿˙¿Â¿ª ø‰±∏«œ¥¬ «¡∑“«¡∆Æ\n¡æ∑·"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "¿Ã πÆº≠ ø≠±‚"
+    ID_FILE_MRU_FILE2       "¿Ã πÆº≠ ø≠±‚"
+    ID_FILE_MRU_FILE3       "¿Ã πÆº≠ ø≠±‚"
+    ID_FILE_MRU_FILE4       "¿Ã πÆº≠ ø≠±‚"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "¥Ÿ¿Ω √¢ ¿Ø∏Æ∑Œ ¿¸»Ø\n¥Ÿ¿Ω √¢ ¿Ø∏Æ"
+    ID_PREV_PANE            "¿Ã¿¸ √¢ ¿Ø∏Æ∑Œ ¿¸»Ø\n¿Ã¿¸ √¢ ¿Ø∏Æ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Ω««‡¡ﬂ¿Œ √¢¿ª ¿Ø∏Æ √¢¿∏∑Œ ∫–«“\n∫–«“"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "º±≈√ ¡ˆøÏ±‚\n¡ˆøÏ±‚"
+    ID_EDIT_CLEAR_ALL       "∏µŒ ¡ˆøÏ±‚\n∏µŒ ¡ˆøÏ±‚"
+    ID_EDIT_COPY            "º±≈√ ªÁ«◊¿ª ∫πªÁ«œø© ≈¨∏≥∫∏µÂø° ¿˙¿Â«œ±‚\n∫πªÁ"
+    ID_EDIT_CUT             "º±≈√ ªÁ«◊¿ª ¿ﬂ∂Û ≥ªæÓ ≈¨∏≥∫∏µÂø° ¿˙¿Â«œ±‚\n¿ﬂ∂Û ≥ª±‚"
+    ID_EDIT_FIND            "¡ˆ¡§ ≈ÿΩ∫∆Æ √£±‚\n√£±‚"
+    ID_EDIT_PASTE           "≈¨∏≥∫∏µÂ ≥ªøÎ ª¿‘\n∫Ÿø©≥÷±‚"
+    ID_EDIT_REPEAT          "∏∂¡ˆ∏∑ ¡∂¿€ π›∫π\nπ›∫π"
+    ID_EDIT_REPLACE         "¡ˆ¡§ ≈ÿΩ∫∆Æ∏¶ ¥Ÿ∏• ≈ÿΩ∫∆Æ∑Œ πŸ≤Ÿ±‚\nπŸ≤Ÿ±‚"
+    ID_EDIT_SELECT_ALL      "πÆº≠ ¿¸√º º±≈√\n¿¸√º º±≈√"
+    ID_EDIT_UNDO            "∏∂¡ˆ∏∑ ¡∂¿€ Ω««‡√Îº“\nΩ««‡√Îº“"
+    ID_EDIT_REDO            "æ’ø°º≠ Ω««‡√Îº“«— ¡∂¿€ ¿ÁΩ««‡\n¿ÁΩ««‡"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "µµ±∏∏¿Ω¡Ÿ ∫∏¿Ã±‚ ∂«¥¬ ∞®√ﬂ±‚\nµµ±∏∏¿Ω¡Ÿ ¿¸»Ø"
+    ID_VIEW_STATUS_BAR      "ªÛ≈¬ «•Ω√¡Ÿ ∫∏¿Ã±‚ ∂«¥¬ ∞®√ﬂ±‚\nªÛ≈¬«•Ω√¡Ÿ ¿¸»Ø"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "√¢ ≈©±‚ ∫Ø∞Ê"
+    AFX_IDS_SCMOVE          "√¢ ¿ßƒ° ∫Ø∞Ê"
+    AFX_IDS_SCMINIMIZE      "√¢¿ª æ∆¿Ãƒ‹¿∏∑Œ √‡º“"
+    AFX_IDS_SCMAXIMIZE      "√¢¿ª ¿¸√º »≠∏È¿∏∑Œ »Æ¥Î"
+    AFX_IDS_SCNEXTWINDOW    "¥Ÿ¿Ω πÆº≠ √¢¿∏∑Œ ¿¸»Ø"
+    AFX_IDS_SCPREVWINDOW    "¿Ã¿¸ πÆº≠ √¢¿∏∑Œ ¿¸»Ø"
+    AFX_IDS_SCCLOSE         "»∞º∫√¢¿ª ¥›∞Ì πÆº≠∏¶ ¿˙¿Â«œµµ∑œ «¡∑“«¡∆Æø° ¿««ÿ ø‰±∏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "√¢¿ª ∫∏≈Î ≈©±‚∑Œ ∫π±Õ"
+    AFX_IDS_SCTASKLIST      "¿€æ˜ ∏Ò∑œ »∞º∫»≠"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "¿Œº‚ πÃ∏Æ∫∏±‚ ∏µÂ ¥›±‚\nπÃ∏Æ∫∏±‚ √Îº“"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINE                 "º± ±◊∏Æ±‚\nº±"
+    ID_RECTANGLE            "ªÁ∞¢«¸ ±◊∏Æ±‚\nªÁ∞¢«¸"
+    ID_ELLIPSE              "≈∏ø¯ ±◊∏Æ±‚\n≈∏ø¯"
+    ID_FREEDRAW             "¿⁄¿Ø ∞Óº± ±◊∏Æ±‚\n¿⁄¿Ø ∞Óº±"
+    ID_PENCOLOR             "º± ªˆ ¡ˆ¡§«œ±‚\nº± ªˆ"
+    ID_BRUSHCOLOR           "√§øÏ±‚ ªˆ ¡ˆ¡§«œ±‚\n√§øÏ±‚ ªˆ"
+    IDC_ERASER              "»≠∏È ¡ˆøÏ±‚\n¡ˆøÏ±‚"
+    ID_ERASER               "»≠∏È ¡ˆøÏ±‚\n¡ˆøÏ±‚"
+END
+
+#endif    // äÿçëåÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// âpåÍ (±“ÿ∂) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_RECTANGLE
+    BUTTON      ID_ELLIPSE
+    BUTTON      ID_LINE
+    BUTTON      ID_FREEDRAW
+    SEPARATOR
+    BUTTON      ID_PENCOLOR
+    BUTTON      ID_BRUSHCOLOR
+    SEPARATOR
+    BUTTON      ID_BUTTON_PLAY
+    BUTTON      ID_BUTTON_PAUSE
+    BUTTON      ID_BUTTON_STOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+#endif    // âpåÍ (±“ÿ∂) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif
+#include "res\Draw.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
